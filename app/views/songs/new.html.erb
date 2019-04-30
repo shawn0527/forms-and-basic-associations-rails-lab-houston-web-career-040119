@@ -14,7 +14,7 @@
   <input type='text', name='song[note_contents][]', id='song_notes_2'></input>
   <% @song.notes.each_with_index do |note, index| %>
   <%=f.label :content %>
-  <%=f.text_field :note_contents, multiple: true id :"song_notes_#{index+1}" %>
+  <%=f.text_field :note_contents, multiple :true id :"song_notes_#{index+1}" %>
   <% end %>
   <br>
   <%= f.submit %>
