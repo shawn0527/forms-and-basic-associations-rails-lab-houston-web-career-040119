@@ -12,6 +12,8 @@
   <br>
   <input type='text', name='song[note_contents][]', id='song_notes_1'></input>
   <input type='text', name='song[note_contents][]', id='song_notes_2'></input>
+  <%=f.label :content %>
+  <%=f.text_field :note_contents
   <br>
   <%= f.submit %>
 <% end %>
